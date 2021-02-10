@@ -1,0 +1,137 @@
+.navigation {
+  color: var(--yellow);
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+
+  width: 100%;
+  align-items: center;
+  z-index: 200;
+  position: fixed;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+
+  a {
+    color: var(--yellow);
+  }
+
+  &__logo {
+    flex: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 100%;
+
+    .nav-link {
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0 1rem;
+      cursor: pointer;
+      height: 100%;
+
+      color: var(--yellow);
+    }
+
+    .primary-heading {
+      color: var(--gray);
+    }
+  }
+
+  &__menu {
+    flex: 1;
+    list-style-type: none;
+    height: 100%;
+  }
+
+  // &__show {
+  //   display: flex;
+  //   flex-direction: column;
+  //   overflow: hidden;
+  //   justify-content: center;
+  //   align-items: center;
+  //   height: 100%;
+  //   list-style-type: none;
+  //   margin-top: 5rem;
+  // }
+
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    height: 100%;
+  }
+
+  &__icons {
+    display: none;
+  }
+
+  // &__item {
+  //   display: flex;
+  //   justify-content: space-around;
+  //   list-style-type: none;
+  //   flex-direction: column;
+  //   height: 100%;
+  //   margin-top: 10rem;
+  // }
+
+  &__list {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0 1rem;
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 80%;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      background-color: orange;
+      transform: scale(0, 1);
+      transition: 0.3s;
+    }
+    &:hover::after {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .navigation {
+    flex-direction: column;
+
+    &__item {
+      margin-bottom: 1rem;
+    }
+
+    &__link {
+      padding: 0.4rem;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav-active {
+  background: rgb(7, 7, 7);
+  color: rgb(236, 157, 10);
+}

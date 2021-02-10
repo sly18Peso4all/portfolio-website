@@ -1,0 +1,40 @@
+.skills-section {
+  padding: 4rem;
+  background: var(--white);
+  height: 100%;
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--yellow);
+  }
+
+  h4 {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .skills-gallery {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .gallery {
+      width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+      margin-right: 25px;
+      transition: all 450ms;
+      img {
+        height: 6rem;
+        width: 6rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
