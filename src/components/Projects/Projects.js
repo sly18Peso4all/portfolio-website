@@ -3,7 +3,6 @@ import "./Projects.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import project from "../../data/projectdata";
-import { Link } from "react-router-dom";
 
 const Projects = () => {
   useEffect(() => {
@@ -11,7 +10,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="project-overview">
+    <div className="project-overview" id="projects">
       <h3>What i've done</h3>
       <div className="project-content" data-aos="fade-right">
         {project.map((item, key) => (
@@ -22,9 +21,17 @@ const Projects = () => {
             <h5>{item.header}</h5>
             <h4 className="project-title">{item.title}</h4>
             <p>{item.description}</p>
-            <Link className="project-btn" to="/">
-              Explore Project
-            </Link>
+            <p style={{ fontWeight: "bold" }}>{item.tech}</p>
+            <p>{item.list}</p>
+
+            <a
+              className="project-btn"
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore
+            </a>
           </div>
         ))}
       </div>

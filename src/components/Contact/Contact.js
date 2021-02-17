@@ -10,7 +10,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="contact-wrapper" data-aos="fade-out">
+    <div className="contact-wrapper" data-aos="fade-out" id="contact">
       <h3 className="contact-header">Get in Touch</h3>
       <div className="contact-container">
         <div className="contact-input">
@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
         <div className="contact-input">
           <textarea required></textarea>
-          <label>Message</label>
+          <label className="message-text">Message</label>
         </div>
         <Link className="contact-btn" to="/">
           Send me a message

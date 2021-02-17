@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { GrFacebook } from "react-icons/gr";
@@ -13,7 +12,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="hero-container" data-aos="fade-in">
+    <div className="hero-container" data-aos="fade-in" id="hero">
       <div className="hero-content">
         <h4 className="hero-name">Joseph Onuoha</h4>
         <h1 className="hero-title">FULLSTACK WEB DEVELOPER</h1>
@@ -24,15 +23,30 @@ const Hero = () => {
           scalable solutions.
         </p>
         <div className="hero-icons">
-          <Link to="/" className="icon">
+          <a
+            href="https://www.linkedin.com/in/joseph-onuoha/"
+            target="_blank"
+            className="icon"
+            rel="noreferrer"
+          >
             <FaLinkedinIn size={25} style={{ fill: " #f8ab37" }} />
-          </Link>
-          <Link to="/" className="icon">
+          </a>
+          <a
+            href="https://github.com/sly18Peso4all"
+            target="_blank"
+            className="icon"
+            rel="noreferrer"
+          >
             <AiFillGithub size={25} style={{ fill: " #f8ab37" }} />
-          </Link>
-          <Link to="/" className="icon">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/joseph-onuoha/"
+            target="_blank"
+            className="icon"
+            rel="noreferrer"
+          >
             <GrFacebook size={25} style={{ fill: " #f8ab37" }} />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

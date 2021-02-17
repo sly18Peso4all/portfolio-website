@@ -45,8 +45,6 @@
       object-fit: cover;
     }
 
-    a {
-    }
     .project-btn {
       position: absolute;
       text-decoration: none;
@@ -55,13 +53,17 @@
       text-transform: uppercase;
       transform: translate(-50%, -50%);
       padding: 0.7rem 1rem;
-      border: 1px solid #e0a449ee;
-      color: var(--white);
-      background: #e0a449ee;
+      // border: 1px solid #e0a449ee;
+      border: 1px solid transparent;
+      // color: var(--white);
+      color: #fc9d0eee;
+      // background: #e0a449ee;
+      background: black;
       transition: background 450ms;
 
       &:hover {
         background: #d6860dee;
+        color: var(--white);
       }
     }
   }
@@ -125,10 +127,7 @@
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
-      }
-
-      a {
+        object-fit: contain;
       }
     }
   }

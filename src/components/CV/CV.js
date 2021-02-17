@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import "./CV.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
-import { Link } from "react-router-dom";
+import Pdf from "../../pdf/pdfCV.pdf";
 
 const CV = () => {
   useEffect(() => {
@@ -11,11 +10,12 @@ const CV = () => {
   }, []);
 
   return (
-    <div className="cv-container" data-aos="fade-left">
+    <div className="cv-container" data-aos="fade-left" id="cv">
       <h3>Check out my resume</h3>
-      <Link className="resume-btn" to="/">
+
+      <a className="resume-btn" href={Pdf} target="_blank" rel="noreferrer">
         Grab a copy
-      </Link>
+      </a>
     </div>
   );
 };

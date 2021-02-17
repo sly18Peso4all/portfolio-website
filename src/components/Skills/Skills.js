@@ -10,7 +10,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="skills-section" data-aos="fade-left">
+    <div className="skills-section" data-aos="fade-left" id="skills">
       <h3>Skills</h3>
       <h4>Technologies i have worked with</h4>
       <div className="skills-gallery">

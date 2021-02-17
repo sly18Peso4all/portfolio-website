@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 import "./NavBar.scss";
 
 const NavBar = () => {
@@ -26,35 +27,35 @@ const NavBar = () => {
       <div className="navigation__menu">
         <ul className="navigation__item">
           <li className="navigation__list">
-            <Link className="navigation__link" to="#">
+            <a className="navigation__link" href="#hero">
               Home
-            </Link>
+            </a>
           </li>
           <li className="navigation__list">
-            <Link className="navigation__link" to="#">
-              About
-            </Link>
+            <a className="navigation__link" href="#featured">
+              Featured
+            </a>
           </li>
           <li className="navigation__list">
-            <Link className="navigation__link" to="#">
-              portfolio
-            </Link>
+            <a className="navigation__link" href="#skills">
+              skills
+            </a>
           </li>
 
           <li className="navigation__list">
-            <Link className="navigation__link" to="#">
-              skills
-            </Link>
+            <a className="navigation__link" href="#projects">
+              projects
+            </a>
           </li>
           <li className="navigation__list">
-            <Link className="navigation__link" to="#">
+            <a className="navigation__link" href="#cv">
               Explore
-            </Link>
+            </a>
           </li>
           <li className="navigation__list">
-            <Link className="navigation__link" to="#">
+            <a className="navigation__link" href="#contact">
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
