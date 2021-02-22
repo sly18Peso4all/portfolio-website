@@ -16,7 +16,7 @@ const Skills = () => {
       <div className="skills-gallery">
         {techimages.map((item, key) => (
           <div className="gallery" key={key} value={item}>
-            <img src={item.image} alt="" />
+            <img src={item.image} alt={item.name} />
           </div>
         ))}
       </div>

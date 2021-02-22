@@ -30,7 +30,7 @@ const Contact = () => {
           <label className="message-text">Message</label>
         </div>
         <Link className="contact-btn" to="/">
-          Send me a message
+          Message me
         </Link>
       </div>
     </div>

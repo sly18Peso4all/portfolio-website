@@ -12,19 +12,19 @@ import tech11 from "../images/tech/trello.jpg";
 import tech12 from "../images/tech/figma.png";
 
 const techdata = [
-  { image: tech1, name: "bootstrap" },
-  { image: tech2, name: "bootstrap" },
-  { image: tech8, name: "bootstrap" },
-  { image: tech3, name: "bootstrap" },
-  { image: tech4, name: "bootstrap" },
-  { image: tech5, name: "bootstrap" },
-  { image: tech6, name: "bootstrap" },
+  { image: tech1, name: "HTML5" },
+  { image: tech2, name: "CSS3" },
+  { image: tech8, name: "JAvaScript" },
+  { image: tech3, name: "React" },
+  { image: tech4, name: "NodeJs" },
+  { image: tech5, name: "Sass" },
+  { image: tech6, name: "MongoDB" },
   { image: tech7, name: "bootstrap" },
 
-  { image: tech9, name: "bootstrap" },
-  { image: tech10, name: "bootstrap" },
-  { image: tech11, name: "bootstrap" },
-  { image: tech12, name: "bootstrap" },
+  { image: tech9, name: "Github" },
+  { image: tech10, name: "Git" },
+  { image: tech11, name: "Trello" },
+  { image: tech12, name: "Figma" },
 ];
 
 export default techdata;
