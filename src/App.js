@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
-import CV from "./components/CV/CV";
+
 import "./App.scss";
 import ReactParticles from "react-particles-js";
 import particlesConfig from "./ParticlesConfig";
@@ -31,7 +31,6 @@ function App() {
         <FeaturedProject />
         <Skills />
         <Projects />
-        <CV />
         <Contact />
         <Footer />
       </div>

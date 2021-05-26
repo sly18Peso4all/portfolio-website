@@ -30,7 +30,7 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Explore
+              view project
             </a>
           </div>
         ))}

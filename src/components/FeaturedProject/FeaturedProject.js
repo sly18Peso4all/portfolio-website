@@ -13,23 +13,24 @@ const FeaturedProject = () => {
     <div className="featured-project" data-aos="fade-out" id="featured">
       <div className="featured-project__content">
         <h4 className="featured-project__subtitle">featured project</h4>
-        <h3 className="featured-project__title">Airbnb-clone Website</h3>
+        <h3 className="featured-project__title">Forkify Website</h3>
         <p className="featured-project__description">
-          A Website that allows users to rent available room of their choice at
-          different Locations. The Website was built using React, JavaScript and
-          React-date-picker.
+          A Website that allows users to a choose variety of ingredients,
+          bookmark and save it. With the Option of creating their ingredient.
+          The Website was built using JavaScript, CSS3, HTML and parcel as the
+          bundler.
         </p>
-      </div>
-      <div className="featured-project__image">
-        <img src={info} alt="" />
         <a
-          className="project-btn"
-          href="https://airbnbsite-clone.netlify.app"
+          className="featured-project__btn"
+          href="https://forkify-foodrecipe.netlify.app"
           target="_blank"
           rel="noreferrer"
         >
           view project
         </a>
+      </div>
+      <div className="featured-project__image">
+        <img src={info} alt="" />
       </div>
     </div>
   );

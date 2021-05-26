@@ -15,12 +15,12 @@ const Hero = () => {
     <div className="hero-container" data-aos="fade-in" id="hero">
       <div className="hero-content">
         <h4 className="hero-name">Joseph Onuoha</h4>
-        <h1 className="hero-title">FULLSTACK WEB DEVELOPER</h1>
+        <h1 className="hero-title">FRONTEND WEB DEVELOPER</h1>
         <p className="hero-description">
-          A creative full stack developer who loves to bring clarity to complex
+          A creative frontend developer who loves to bring clarity to complex
           concepts through design. I have a genuine passion for inspiring design
           and innovative technology, I enjoy solving problems with clean
-          scalable solutions.
+          maintainable solutions.
         </p>
         <div className="hero-icons">
           <a

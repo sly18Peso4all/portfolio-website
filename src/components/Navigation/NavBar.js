@@ -48,11 +48,6 @@ const NavBar = () => {
             </a>
           </li>
           <li className="navigation__list">
-            <a className="navigation__link" href="#cv">
-              Explore
-            </a>
-          </li>
-          <li className="navigation__list">
             <a className="navigation__link" href="#contact">
               Contact
             </a>
